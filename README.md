@@ -1,1 +1,1 @@
-# riddle-game
+riddle-game
