@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 4</title>
+<style>
+body {font-family: Arial; text-align:center; background:#f4f4f4; padding:40px;}
+.container {background:white; padding:20px; border-radius:10px; max-width:400px; margin:auto;}
+input, button {padding:10px; margin-top:10px; width:90%;}
+button {background:black; color:white; border:none;}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>Riddle 4</h2>
+<p>I have hands but cannot clap. What am I?</p>
+<input type="text" id="answer">
+<button onclick="checkAnswer()">Submit</button>
+</div>
+
+<script>
+function checkAnswer(){
+    let ans = document.getElementById("answer").value.toLowerCase();
+    if(ans === "clock"){
+        window.location.href = "riddle5.html";
+    } else {
+        alert("Wrong answer! Try again.");
+    }
+}
+</script>
+
+</body>
+</html>
